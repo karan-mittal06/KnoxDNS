@@ -1,26 +1,29 @@
 # KnoxDNS
 
-KnoxDNS is a secure and privacy-focused DNS resolver that supports DNS-over-HTTPS (DoH). It aims to provide fast and encrypted DNS queries while ensuring user privacy and security.
+KnoxDNS is a secure and privacy-focused DNS resolver that supports DNS-over-HTTPS (DoH). It includes a website for easy management and an AI-powered malicious URL checker to enhance security. KnoxDNS aims to provide a seamless, high-performance, and user-friendly DNS experience, ensuring that users can browse the internet without concerns over data privacy, tracking, or malicious threats.
+
+With KnoxDNS, users can take control of their DNS queries and safeguard their online activities. By leveraging encryption and AI-driven security measures, KnoxDNS effectively mitigates threats like DNS hijacking, phishing attacks, and unauthorized tracking.
 
 ## Features
 
-- **DNS-over-HTTPS (DoH)**: Encrypts DNS queries for enhanced privacy.
-- **High Performance**: Optimized for low latency and fast responses.
-- **Security Focused**: Prevents DNS spoofing and improves user protection.
-- **Customizable**: Configurable settings for different use cases.
+X **DNS-over-HTTPS (DoH)**: Encrypts DNS queries for enhanced privacy.
+X **High Performance**: Optimized for low latency and fast responses.
+X **Security Focused**: Prevents DNS spoofing and improves user protection.
+X **AI threat detection and protection**: Live AI threat detection tool to protect against malicious urls
+X **Analytics**: Real-time analytics available for flagged sites
 
 ## Installation
 
 ### Prerequisites
 
-- Python 3.x
+- Python 3.9
 - pip
 
 ### Steps
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/knoxdns.git
+   git clone https://github.com/karan-mittal06/knoxdns.git
    cd knoxdns
    ```
 
@@ -33,17 +36,6 @@ KnoxDNS is a secure and privacy-focused DNS resolver that supports DNS-over-HTTP
    ```sh
    python main.py
    ```
-
-## Configuration
-
-Modify the `config.json` file to customize the DNS settings.
-
-```json
-{
-  "port": 8080,
-  "upstream_dns": "https://1.1.1.1/dns-query"
-}
-```
 
 ## Usage
 
@@ -63,7 +55,4 @@ To use KnoxDNS as your system resolver, configure your network settings to point
 
 Contributions are welcome! Feel free to open an issue or submit a pull request.
 
-## License
-
-This project is licensed under the MIT License.
 
