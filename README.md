@@ -6,11 +6,11 @@ With KnoxDNS, users can take control of their DNS queries and safeguard their on
 
 ## Features
 
-X **DNS-over-HTTPS (DoH)**: Encrypts DNS queries for enhanced privacy.
-X **High Performance**: Optimized for low latency and fast responses.
-X **Security Focused**: Prevents DNS spoofing and improves user protection.
-X **AI threat detection and protection**: Live AI threat detection tool to protect against malicious urls
-X **Analytics**: Real-time analytics available for flagged sites
+- X **DNS-over-HTTPS (DoH)**: Encrypts DNS queries for enhanced privacy.
+- X **High Performance**: Optimized for low latency and fast responses.
+- X **Security Focused**: Prevents DNS spoofing and improves user protection.
+- X **AI threat detection and protection**: Live AI threat detection tool to protect against malicious urls
+- X **Analytics**: Real-time analytics available for flagged sites
 
 ## Installation
 
