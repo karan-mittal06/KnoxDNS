@@ -12,45 +12,6 @@ With KnoxDNS, users can take control of their DNS queries and safeguard their on
 - X **AI threat detection and protection**: Live AI threat detection tool to protect against malicious urls
 - X **Analytics**: Real-time analytics available for flagged sites
 
-## Installation
-
-### Prerequisites
-
-- Python 3.9
-- pip
-
-### Steps
-
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/karan-mittal06/knoxdns.git
-   cd knoxdns
-   ```
-
-2. Install dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
-
-3. Run the server:
-   ```sh
-   python main.py
-   ```
-
-## Usage
-
-### API Endpoint
-
-Send a DNS query using DoH:
-
-```sh
-curl -X GET "http://localhost:8080/dns-query?name=example.com&type=A"
-```
-
-### Integration with System
-
-To use KnoxDNS as your system resolver, configure your network settings to point to your KnoxDNS server.
-
 ## Contributing
 
 Contributions are welcome! Feel free to open an issue or submit a pull request.
