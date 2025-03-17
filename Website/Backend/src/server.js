@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
     res.send("KnoxDNS API is running...")
 })
 
-
+console.log("Hello there")
 
 app.listen(PORT, () => {
     console.log(`🚀 Server running on http://localhost:${PORT}`);
