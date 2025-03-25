@@ -1,0 +1,11 @@
+fastapi
+pydantic
+torch
+torch-geometric
+numpy
+scikit-learn
+networkx
+pandas
+joblib
+tldextract
+uvicorn
