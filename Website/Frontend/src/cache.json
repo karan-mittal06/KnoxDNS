@@ -1,0 +1,7 @@
+[
+  { "website_name": "example.com", "flagged_count": 10 },
+  { "website_name": "malicious-site.com", "flagged_count": 5 },
+  { "website_name": "malicious-site.com", "flagged_count": 6 },
+  
+  { "website_name": "phishing-site.com", "flagged_count": 8 }
+]

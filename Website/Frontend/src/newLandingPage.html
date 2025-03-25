@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KnoxDNS - Cybersecurity Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-dark: #0f1113;
+        --bg-darker: #0a0c0e;
+        --primary-green: #00f0a0;
+        --secondary-green: #00c080;
+        --accent-blue: #00d4ff;
+        --text-light: #e6f1ff;
+        --text-muted: #8892b0;
+      }
+      body {
+        background-color: var(--bg-dark);
+        color: var(--text-light);
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .gradient-border {
+        position: relative;
+        overflow: hidden;
+      }
+      .gradient-border::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(
+          45deg,
+          var(--primary-green),
+          var(--accent-blue),
+          var(--secondary-green)
+        );
+        background-size: 50% 50%;
+        animation: gradient-move 5s ease infinite;
+        opacity: 0.3;
+        z-index: 1;
+      }
+      .gradient-border::after {
+        content: "";
+        position: absolute;
+        inset: 2px;
+        background: var(--bg-dark);
+        z-index: 2;
+      }
+      .gradient-border > * {
+        position: relative;
+        z-index: 3;
+      }
+      @keyframes gradient-move {
+        0% {
+          transform: translate(-25%, -25%) rotate(0deg);
+        }
+        50% {
+          transform: translate(-25%, -25%) rotate(180deg);
+        }
+        100% {
+          transform: translate(-25%, -25%) rotate(360deg);
+        }
+      }
+      .service-card {
+        transition: all 0.3s ease;
+        transform-origin: center;
+      }
+      .service-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px rgba(0, 240, 160, 0.2);
+      }
+      .hero-title {
+        background: linear-gradient(
+          90deg,
+          var(--primary-green),
+          var(--accent-blue)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <header class="py-6">
+        <nav class="flex justify-between items-center">
+          <div class="flex items-center space-x-4">
+            <i class="fas fa-shield-alt text-3xl text-primary-green"></i>
+            <span class="text-2xl font-bold text-primary-green">KnoxDNS</span>
+          </div>
+          <div class="flex space-x-6">
+            <!-- <a
+              href="#"
+              class="text-text-muted hover:text-primary-green transition-colors"
+              >Home</a
+            > -->
+            <!-- <a
+              href="#"
+              class="text-text-muted hover:text-primary-green transition-colors"
+              >About</a
+            > -->
+            <a
+              href="dashboard.html"
+              class="text-text-muted hover:text-primary-green transition-colors"
+              >Analytics</a
+            >
+            <a
+              href="#"
+              class="text-text-muted hover:text-primary-green transition-colors"
+              >Contact</a
+            >
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section
+          class="flex items-center justify-between text-center py-16 px-10"
+        >
+          <!-- Text Content (Left) -->
+          <div class="max-w-2xl text-left">
+            <h1
+              class="text-5xl md:text-6xl font-bold mb-6 hero-title leading-tight"
+            >
+              Fortify Your Digital<br /> Frontiers
+            </h1>
+
+            <p class="text-text-muted text-lg">
+              Advanced cybersecurity solutions designed to protect, detect, and
+              defend against the most sophisticated digital threats.
+            </p>
+            <div class="mt-10">
+              <a
+                href="#"
+                class="px-8 py-3 bg-primary-green text-bg-dark rounded-full font-semibold hover:bg-secondary-green transition-colors"
+              >
+                Get Started
+              </a>
+            </div>
+          </div>
+
+          <!-- Image (Right) -->
+          <div id="image" class="flex-shrink-0 w-auto max-w-full">
+            <img
+              src="/Frontend/CyberSecurity Landing Page (Community)/cyber security 1.png"
+              alt="Cybersecurity Illustration"
+              class="h-[402px] w-auto object-cover"
+            />
+          </div>
+        </section>
+
+        <section class="py-16">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4 text-text-light">
+              Our Comprehensive Cyber Security Services
+            </h2>
+            <p class="text-text-muted max-w-xl mx-auto">
+              Cutting-edge protection tailored for businesses of all sizes,
+              backed by expertise and innovative technology.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <div
+              class="gradient-border service-card bg-bg-darker p-6 rounded-xl text-center"
+            >
+              <i
+                class="text-green-500 fas fa-network-wired text-4xl text-primary-green mb-4"
+              ></i>
+              <h3 class="text-xl font-bold text-text-light mb-3">
+                Network Security
+              </h3>
+              <p class="text-text-muted">
+                Comprehensive threat protection with real-time monitoring and
+                intelligent defense mechanisms.
+              </p>
+            </div>
+            <div
+              class="gradient-border service-card bg-bg-darker p-6 rounded-xl text-center"
+            >
+              <i class="text-green-500 fas fa-shield-alt text-4xl text-primary-green mb-4"></i>
+              <h3 class="text-xl font-bold text-text-light mb-3">
+                Threat Detection
+              </h3>
+              <p class="text-text-muted">
+                AI-powered anomaly detection and predictive security analytics.
+              </p>
+            </div>
+            <div
+              class="gradient-border service-card bg-bg-darker p-6 rounded-xl text-center"
+            >
+              <i class="text-green-500 fas fa-bug text-4xl text-primary-green mb-4"></i>
+              <h3 class="text-xl font-bold text-text-light mb-3">
+                Penetration Testing
+              </h3>
+              <p class="text-text-muted">
+                Comprehensive vulnerability assessment and ethical hacking
+                services.
+              </p>
+            </div>
+            <div
+              class="gradient-border service-card bg-bg-darker p-6 rounded-xl text-center"
+            >
+              <i class="text-green-500 fas fa-cloud text-4xl text-primary-green mb-4"></i>
+              <h3 class="text-xl font-bold text-text-light mb-3">
+                Cloud Security
+              </h3>
+              <p class="text-text-muted">
+                Robust protection for cloud infrastructure and data
+                environments.
+              </p>
+            </div>
+            <div
+              class="gradient-border service-card bg-bg-darker p-6 rounded-xl text-center"
+            >
+              <i class="text-green-500 fas fa-lock text-4xl text-primary-green mb-4"></i>
+              <h3 class="text-xl font-bold text-text-light mb-3">Encryption</h3>
+              <p class="text-text-muted">
+                Military-grade encryption and secure communication protocols.
+              </p>
+            </div>
+            <div
+              class="gradient-border service-card bg-bg-darker p-6 rounded-xl text-center"
+            >
+              <i class="text-green-500 fas fa-globe text-4xl text-primary-green mb-4"></i>
+              <h3 class="text-xl font-bold text-text-light mb-3">
+                Global Protection
+              </h3>
+              <p class="text-text-muted">
+                Worldwide threat intelligence and comprehensive security
+                strategies.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="py-8 text-center border-t border-gray-800">
+        <p class="text-text-muted">
+          © 2025 KnoxDNS Cybersecurity. All Rights Reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
