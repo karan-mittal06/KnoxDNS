@@ -9,7 +9,7 @@ import base64
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import requests
 
-UPSTREAM_DNS = "8.8.8.8"
+UPSTREAM_DNS = "10.10.10.1"
 UPSTREAM_PORT = 53
 
 class DNSUDPhandler(BaseRequestHandler):
@@ -164,7 +164,7 @@ class DOHHandler(BaseHTTPRequestHandler):
         content_length = int(self.headers['Content-Length'])
         dns_query = self.rfile.read(content_length)
 
-        headers = {'Content-Type': "application/dns-,message"}
+        headers = {'Content-Type': "application/dns-message"}
         response = requests.post(UPSTREAM_DOH, headers= headers, data = dns_query)
 
         if response.status_code == 200:
