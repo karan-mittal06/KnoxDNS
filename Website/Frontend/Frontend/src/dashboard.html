@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <script src="script.js" defer></script>
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body class="p-2 m-2 bg-black">
+    <nav class="p-4 flex items-center justify-around">
+      <div class="">
+        <p class="text-white md:-translate-x-20 text-2xl"><span class="text-blue-400">Knox</span>DNS</p>
+      </div>
+      <div id="nav">
+      <h2 class="text-center text-4xl p-4 m-4 text-white" >
+        <span class="text-blue-400">Sites</span> Flagged  
+      </h2>
+    </div>
+      <div id="img">
+
+        <a href="newLandingPage.html"><svg class="text-white" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#fff"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg></a>
+      </div>
+    </nav>
+    <!-- <div id="nav">
+      <h2 class="text-center text-4xl p-4 m-4 text-white" >
+        Analytics 
+      </h2>
+    </div> -->
+    <div id="table" class="overflow-auto justify-items-center">
+      <table class="w-full border-2 border-gray-800 block md:table shadow-lg rounded-lg overflow-hidden">
+        <thead>
+          <tr class="bg-white">
+            <th class="md:p-8 m-2  border-black ">Sr No.</th>
+            <th class="md:p-8 m-2  border-black ">Website Name</th>
+            <th class="p-8 m-2  border-black ">Number of Times Flagged</th>
+          </tr>
+        </thead>
+        <tbody id="token-table">
+          <tr class="border border-black">
+            <!-- <td class="p-4 border border-black ">Loading</td>
+            <td class="p-4 md:p-8 border border-black ">example.com</td>
+            <td class="p-4 md:p-8 border border-black ">10</td> -->
+            <td colspan="3" class = "text-white text-2xl text-center p-4 loading-dots">Loading </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
