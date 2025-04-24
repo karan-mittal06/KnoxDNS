@@ -1,0 +1,78 @@
+{
+  "flaggingActivity": {
+    "daily": [
+      {
+        "date": "04/11",
+        "badCount": 2,
+        "goodCount": 5
+      },
+      {
+        "date": "04/12",
+        "badCount": 2,
+        "goodCount": 5
+      },
+      {
+        "date": "04/13",
+        "badCount": 2,
+        "goodCount": 5
+      },
+      {
+        "date": "04/14",
+        "badCount": 2,
+        "goodCount": 5
+      },
+      {
+        "date": "04/15",
+        "badCount": 2,
+        "goodCount": 5
+      },
+      {
+        "date": "04/16",
+        "badCount": 2,
+        "goodCount": 5
+      },
+      {
+        "date": "04/17",
+        "badCount": 4,
+        "goodCount": 12
+      }
+    ]
+  },
+  "flaggedSites": [
+    {
+      "website_name": "google.com.",
+      "type": "good",
+      "flagged_count": 4
+    },
+    {
+      "website_name": "solmedia.pk/images/tmp/7/.",
+      "type": "bad",
+      "flagged_count": 2
+    },
+    {
+      "website_name": "http://127.0.0.1:5500/KnoxDNS/Website/Frontend/src/index.html.",
+      "type": "good",
+      "flagged_count": 1
+    },
+    {
+      "website_name": "google.com].",
+      "type": "good",
+      "flagged_count": 1
+    },
+    {
+      "website_name": "example.com.",
+      "type": "good",
+      "flagged_count": 3
+    },
+    {
+      "website_name": "youtube.com.",
+      "type": "good",
+      "flagged_count": 3
+    },
+    {
+      "website_name": "http://127.0.0.1:5501/Website/Frontend/src/warning_page.html.",
+      "type": "bad",
+      "flagged_count": 2
+    }
+  ]
+}
